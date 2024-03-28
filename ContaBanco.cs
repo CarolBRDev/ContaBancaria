@@ -29,6 +29,19 @@ namespace ContaBancaria
             Saldo = DepositoInicial;
         }
 
-        
+        //métodos
+        public double EfetuarDeposito()
+        {
+            Saldo += ValorDeposito;
+            return Saldo;
+        }
+
+        public double EfetuarSaque()
+        {
+            Saldo += ValorSaque - 5;
+            return Saldo;
+        }
+       
     }
+}
 }
